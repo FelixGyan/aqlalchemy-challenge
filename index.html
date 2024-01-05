@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>{% block title%} {% endblock %}</title>
+    </head>
+    <body>
+        <h2>Felix's Weather application</h2>
+        <menu>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/api/v1.0/precipitation">Precipitation in last 12 months</a></li>
+                <li><a href="/api/v1.0/stations">Stations</a></li>
+                <li><a href="/api/v1.0/tobs">Temperatures</a></li>
+                <li><a href="/api/v1.0/2016-08-23">Start date only</a></li>
+                <li><a href="/api/v1.0/2016-08-23/2017-01-20">Start and End date</a></li>
+            </ul>
+        </menu>
+
+        <div>
+           
+            {% block content %}
+            {% endblock %}
+
+
+        </div>
+    </body>
+</html>
